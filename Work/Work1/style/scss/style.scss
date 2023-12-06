@@ -1,0 +1,62 @@
+@import "vars";
+@import "mixins";
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+// $colorMain: cornflowerblue;
+// $screenWidth: 1200px;
+// $colorSite: #8a2be2;
+// $gap: 16px;
+// $borderMain: 1px solid #000;
+
+.center {
+  margin-left: calc(50% - $screenWidth/2);
+  margin-right: calc(50% - $screenWidth/2);
+}
+.header_one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $colorMain;
+}
+//the preprocessor word color
+.header_greeting {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  .header_greeting_color {
+    color: $colorSite;
+  }
+}
+.nav {
+  display: flex;
+  justify-content: start;
+  gap: $gap;
+
+  &__link {
+    @extend %font-style;
+    text-decoration: none;
+  }
+  &__text {
+    color: $colorMain;
+  }
+  img {
+    width: 100%;
+  }
+}
+.modify--class {
+  text-align: center;
+}
+.content {
+  gap: $gap;
+  @include flex;
+  &__item {
+    width: calc($screenWidth / 4);
+    border: $borderMain;
+    height: 200px;
+  }
+}
