@@ -1,0 +1,15 @@
+@import "../../fonts/fonts";
+
+.box {
+  &__title {
+    font-family: "merriweatherbold";
+  }
+  &__text {
+    font-family: "open_sansregular";
+  }
+  &__subtitle {
+    color: #fff;
+    -webkit-text-stroke: 1px navy;
+    text-stroke: 1px navy;
+  }
+}
