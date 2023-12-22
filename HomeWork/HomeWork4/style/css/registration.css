@@ -1,0 +1,185 @@
+.breadcrumb {
+  padding: 60px 0;
+  background-color: #f8f3f4;
+}
+.breadcrumb__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.breadcrumb__title {
+  text-transform: uppercase;
+  color: #f16d7f;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.breadcrumb__links-wrapper {
+  max-width: 209px;
+  width: 100%;
+}
+.breadcrumb__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 209px;
+  width: 100%;
+}
+.breadcrumb__item:not(:last-child)::after {
+  content: "/";
+  color: #636363;
+  font-family: "Lato";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.breadcrumb__link {
+  margin-right: 8px;
+  color: #636363;
+  font-family: "Lato";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.breadcrumb__link:hover {
+  color: #f16d7f;
+  font-weight: 700;
+}
+
+.registration {
+  padding: 64px 0 96px;
+}
+.registration__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.registration__description-wrapper {
+  max-width: 652px;
+  width: 100%;
+}
+.registration__text {
+  margin-bottom: 22px;
+}
+.registration__title {
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.registration__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 43px;
+}
+.registration__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.registration__item::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 16px;
+  left: -42px;
+  background: url(../../img/Vector2.png) no-repeat center/cover;
+}
+
+.form {
+  padding: 0;
+}
+.form__wrapper {
+  margin: 0;
+}
+.form__yourname-wrapper {
+  margin-bottom: 30px;
+}
+.form__radio-input-wrapper {
+  margin-bottom: 30px;
+}
+.form__pass-input-wrapper {
+  margin-bottom: 15px;
+}
+.form__subtitle--capitalize {
+  text-transform: capitalize;
+}
+.form__input:last-child {
+  margin: 0;
+}
+.form__radio-input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 132px;
+  width: 100%;
+}
+.form__radio-input {
+  display: none;
+}
+.form__radio-input:checked + label span::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  background-color: #f16d7f;
+}
+.form__radio-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: normal;
+  box-sizing: border-box;
+}
+.form__radio-label span {
+  display: block;
+  position: relative;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #a4a4a4;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.form__text {
+  color: #b1b1b1;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+.form__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  border-color: #f16d7f;
+  background-color: #f16d7f;
+  padding: 15px 28px;
+}
+.form__button span {
+  display: block;
+  width: 17px;
+  height: 10px;
+  margin-left: 20px;
+  background: url(../../img/arrow.png) no-repeat center/cover;
+}
+
+.des-text {
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+}

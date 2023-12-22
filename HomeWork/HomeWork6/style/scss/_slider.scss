@@ -1,0 +1,76 @@
+.slider {
+  position: relative;
+  max-width: 1600px;
+  overflow: hidden;
+  margin: 0 auto;
+
+  &-line {
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    transition: all 3s ease;
+  }
+
+  &-image {
+    display: block;
+    width: 100%;
+  }
+
+  &-prev {
+    left: 0;
+
+    span {
+      transform: rotate(180deg);
+    }
+  }
+
+  &-next {
+    right: 0;
+  }
+
+  &-prev,
+  &-next {
+    cursor: pointer;
+    top: 50%;
+    border: none;
+    position: absolute;
+    background-color: #d8d8d8;
+    width: 47px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover span {
+      background-image: url(../../img/product/dashicons_arrow-right-alt2.svg);
+    }
+
+    span {
+      display: block;
+      width: 31px;
+      height: 31px;
+      background-image: url(../../img/product/arrow.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .slider {
+    height: 624px;
+
+    &-line {
+      height: 624px;
+    }
+
+    &-item {
+      height: 374px;
+    }
+
+    &-image {
+      height: 374px;
+    }
+  }
+}

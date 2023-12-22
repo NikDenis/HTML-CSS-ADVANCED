@@ -1,0 +1,214 @@
+.breadcrumb {
+  padding: 60px 0;
+  background-color: #f8f3f4;
+}
+.breadcrumb__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.breadcrumb__title {
+  text-transform: uppercase;
+  color: #f16d7f;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.breadcrumb__links-wrapper {
+  max-width: 209px;
+  width: 100%;
+}
+.breadcrumb__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 209px;
+  width: 100%;
+}
+.breadcrumb__item:not(:last-child)::after {
+  content: "/";
+  color: #636363;
+  font-family: "Lato";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.breadcrumb__link {
+  margin-right: 8px;
+  color: #636363;
+  font-family: "Lato";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.breadcrumb__link:hover {
+  color: #f16d7f;
+  font-weight: 700;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.filter {
+  padding: 50px 0;
+}
+.filter__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.filter__details {
+  max-width: 360px;
+  width: 100%;
+  position: relative;
+}
+.filter__details[open] > summary {
+  color: #ef5b70;
+  padding-left: 16px;
+  width: 86px;
+}
+.filter__details[open] svg {
+  fill: #ef5b70;
+}
+.filter__summary {
+  position: relative;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70px;
+  text-transform: uppercase;
+  color: #000;
+  font-family: "Lato";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.filter__summary span {
+  width: 15px;
+  height: 10px;
+}
+.filter__summary span svg {
+  display: block;
+  fill: black;
+}
+.filter__details-wrp {
+  position: absolute;
+  top: -13px;
+  z-index: 30;
+  padding: 37px 16px 0;
+  max-width: 360px;
+  width: 100%;
+  background-color: #fff;
+  filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
+}
+.filter__details-wrp summary {
+  padding: 11px;
+  margin: 9px 0;
+  border-bottom: 1px solid #ebebeb;
+  border-left: 5px solid #ef5b70;
+  text-transform: uppercase;
+  color: #6f6e6e;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.filter__details-wrp details[open] summary {
+  color: #ef5b70;
+}
+.filter__details-wrp ul {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  padding: 19px 0 19px 11px;
+}
+.filter__details-wrp a {
+  display: block;
+  color: #6f6e6e;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.filter__group-select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 296px;
+  width: 100%;
+}
+.filter__group-select summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: #6f6e6e;
+  font-family: "Lato";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.filter__group-select summary span {
+  margin-left: 10px;
+}
+.filter__group-select summary svg {
+  display: block;
+}
+.filter__group-list {
+  position: absolute;
+  z-index: 30;
+  top: 22px;
+  left: -9px;
+  width: 80px;
+  background-color: #fff;
+  box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+  padding: 9px 9px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.filter__group-list li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.filter__group-list li input {
+  margin-right: 8px;
+}
+.filter__group-list label {
+  text-transform: uppercase;
+  color: #6f6e6e;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.filter__group-details-size {
+  position: relative;
+}
+
+.product__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 50px;
+}
